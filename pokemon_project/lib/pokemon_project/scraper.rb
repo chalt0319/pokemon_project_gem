@@ -6,13 +6,13 @@ class Scraper
 
   def self.poke
 
-    html_1 = open("https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)")
+    html_1 = open("http://pokemon.wikia.com/wiki/Pikachu")
     doc_1 = Nokogiri::HTML(html_1)
 
     poke_1 = self.new
-    poke_1.name = doc_1.css("h1").text
-    poke_1.type = "Electric"
-    poke_1.evolve = "Can Evolve into Raichu"
+    poke_1.name = doc_1.css("h1.page-header__title").text
+    poke_1.type = doc_1.css("a span.t-type23").text
+    poke_1.evolve = "Can Evolve into #{doc_1.css("td.poké-border2.border-electric a").text}"
 
     poke_2 = self.new
     poke_2.name = "Bulbasaur"

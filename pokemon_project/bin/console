@@ -2,7 +2,8 @@
 
 require "bundler/setup"
 require "pokemon_project"
-require "enviro"
+# require "enviro"
+require "./lib/enviro"
 # require_relative "./config/enviro"
 
 # You can add fixtures and/or initialization code here to make experimenting
