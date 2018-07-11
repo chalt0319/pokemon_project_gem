@@ -1,3 +1,9 @@
 #!/usr/bin/env ruby
 
+require_relative "./config/enviro"
+
 puts "Here is a list of some popular Pokemon"
+
+Pokemon.new.list
+
+puts "Please choose which pokemon you would like to know more about"

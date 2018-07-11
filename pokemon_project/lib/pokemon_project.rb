@@ -1,5 +1,2 @@
-require "pokemon_project/version"
-
-module PokemonProject
-  # Your code goes here...
-end
+# require "pokemon_project"
+# require_relative "./pokemon_project/cli"
