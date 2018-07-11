@@ -1,2 +1,2 @@
-require_relative "./lib/pokemon_project/version"
-require_relative "./lib/pokemon_project/cli"
+# require "./lib/pokemon_project/version"
+# require "./lib/pokemon_project/cli"

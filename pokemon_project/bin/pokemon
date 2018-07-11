@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
-require_relative "./config/enviro"
+require "./lib/enviro"
 
-puts "Here is a list of some popular Pokemon"
+puts "Here is a list of some popular Pokemon:"
 
 Pokemon.new.list
 
