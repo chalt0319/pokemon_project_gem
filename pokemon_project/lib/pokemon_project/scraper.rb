@@ -1,10 +1,16 @@
+require 'nokogiri'
+require 'open-uri'
+
 class Scraper
   attr_accessor :name, :type, :evolve
 
   def self.poke
 
+    html_1 = open("https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)")
+    doc_1 = Nokogiri::HTML(html_1)
+
     poke_1 = self.new
-    poke_1.name = "Pikachu"
+    poke_1.name = doc_1.css("h1").text
     poke_1.type = "Electric"
     poke_1.evolve = "Can Evolve into Raichu"
 
