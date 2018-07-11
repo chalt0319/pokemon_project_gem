@@ -7,9 +7,10 @@ class Pokemon
   end
 
   def list
-   puts "1. Pikachu"
-   puts "2. Bulbasaur"
-   puts "3. Geodude"
+    @poke_list = Scraper.poke
+    puts "1. #{@poke_list[0].name}"
+    puts "2. #{@poke_list[1].name}"
+    puts "3. #{@poke_list[2].name}"
   end
 
   def more?
