@@ -23,12 +23,7 @@ class Pokemon
       puts "Please choose which pokemon you would like to know more about. When done, please enter 'exit'"
       input = gets.strip
       if input.to_i > 0
-        puts "#{@poke_list[input.to_i - 1].name} - #{@poke_list[input.to_i - 1].type} Type - #{@poke_list[input.to_i - 1].evolve}"
-      #   puts "1. Pikachu - Electric Type - Can Evolve into Raichu"
-      # elsif input == "2"
-      #   puts "2. Bulbasaur - Grass Type - Can Evolve into Ivysaur"
-      # elsif input == "3"
-      #   puts "3. Geodude - Rock Type - Can Evolve into Graveler"
+        puts "#{@poke_list[input.to_i - 1].name} - #{@poke_list[input.to_i - 1].type} Type - #{@poke_list[input.to_i - 1].physiology}"
       elsif input != "exit"
         puts "Invalid input, please try again."
       end
