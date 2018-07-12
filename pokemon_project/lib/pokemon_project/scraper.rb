@@ -9,10 +9,16 @@ class Scraper
     html_1 = open("http://pokemon.wikia.com/wiki/Pikachu")
     doc_1 = Nokogiri::HTML(html_1)
 
+    # @raichu = doc_1.css("p").each do |element|
+    #   if element.include?("Raichu")
+    #     element.text
+    #   end
+    # end
+
     poke_1 = self.new
     poke_1.name = doc_1.css("h1.page-header__title").text
     poke_1.type = doc_1.at_css("span.t-type2").text
-    poke_1.evolve = "Can Evolve into #{doc_1.at_css("a").}"
+    poke_1.evolve = doc_1.css("p")[10].text
 
     poke_2 = self.new
     poke_2.name = "Bulbasaur"
