@@ -19,7 +19,7 @@ class Pokemon
     while input != "exit"
       puts "Please choose which pokemon you would like to know more about. When done, please enter 'exit'"
       input = gets.strip
-      if input.to_i > 0
+      if input.to_i > 0 && input.to_i <= @poke_list.length
         puts "#{@poke_list[input.to_i - 1].name} - #{@poke_list[input.to_i - 1].type} Type - #{@poke_list[input.to_i - 1].physiology}"
       elsif input != "exit"
         puts "Invalid input, please try again."
