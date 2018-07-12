@@ -12,9 +12,6 @@ class Pokemon
     @poke_list.each.with_index do |poke, i|
       puts "#{i + 1}. #{poke.name}"
     end
-    # puts "1. #{@poke_list[0].name}"
-    # puts "2. #{@poke_list[1].name}"
-    # puts "3. #{@poke_list[2].name}"
   end
 
   def more?
