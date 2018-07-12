@@ -11,8 +11,8 @@ class Scraper
 
     poke_1 = self.new
     poke_1.name = doc_1.css("h1.page-header__title").text
-    poke_1.type = doc_1.search("span.t-type2").text
-    poke_1.evolve = "Can Evolve into #{doc_1.css("td.poké-border2.border-electric a").text}"
+    poke_1.type = doc_1.at_css("span.t-type2").text
+    poke_1.evolve = "Can Evolve into #{doc_1.at_css("a").}"
 
     poke_2 = self.new
     poke_2.name = "Bulbasaur"

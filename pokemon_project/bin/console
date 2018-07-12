@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
-
+require "irb"
+IRB.start(__FILE__)
 require "bundler/setup"
 require "pokemon_project"
 # require "enviro"
@@ -13,7 +14,7 @@ require "./lib/enviro"
 # require "pry"
 # Pry.start
 
-require "irb"
-IRB.start(__FILE__)
+# require "irb"
+# IRB.start(__FILE__)
 
 # puts "hello"
