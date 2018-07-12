@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'Courtney Haltiwanger'"]
   spec.email         = ["'chalt0319@gmail.com'"]
 
-  spec.summary       = %q{this is the summary}
-  spec.description   = %q{this is the description}
-  spec.homepage      = "https://www.google.com/search?q=geodude+evolution&oq=geodue+&aqs=chrome.1.69i57j0l5.3713j0j7&sourceid=chrome&ie=UTF-8"
+  spec.summary       = %q{Find out more in the pokemon of your choosing.}
+  spec.description   = %q{Pokemon info finder.}
+  spec.homepage      = "https://www.google.com"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
