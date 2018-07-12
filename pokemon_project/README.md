@@ -1,12 +1,12 @@
 ## Pokemon Gem Project
 
-Welcome to your new gem!
+Welcome to your new gem! With this gem, you can view a list of Pokemon you can learn more about. 
 
 ## Installation
 
 To install this gem, type in the following into your terminal:
 
-    `gem install pokemon_project`
+    gem install pokemon_project
 
 Congratulations! You are now ready to use your new gem!
 
