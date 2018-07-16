@@ -2,4 +2,4 @@
 
 require "./lib/enviro"
 
-Pokemon.new.call
+Cli.new.call
